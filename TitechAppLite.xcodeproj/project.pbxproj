@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7E7FB0C824E8FC4100BB8D59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7FB0C724E8FC4100BB8D59 /* AppDelegate.swift */; };
+		7E7FB0CA24E8FC4100BB8D59 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7FB0C924E8FC4100BB8D59 /* SceneDelegate.swift */; };
+		7E7FB0CC24E8FC4100BB8D59 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7FB0CB24E8FC4100BB8D59 /* ContentView.swift */; };
+		7E7FB0CE24E8FC4300BB8D59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E7FB0CD24E8FC4300BB8D59 /* Assets.xcassets */; };
+		7E7FB0D124E8FC4300BB8D59 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E7FB0D024E8FC4300BB8D59 /* Preview Assets.xcassets */; };
+		7E7FB0D424E8FC4300BB8D59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E7FB0D224E8FC4300BB8D59 /* LaunchScreen.storyboard */; };
+		7E7FB0DF24E8FC4300BB8D59 /* TitechAppLiteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7FB0DE24E8FC4300BB8D59 /* TitechAppLiteTests.swift */; };
+		7E7FB0EA24E8FC4300BB8D59 /* TitechAppLiteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7FB0E924E8FC4300BB8D59 /* TitechAppLiteUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7E7FB0DB24E8FC4300BB8D59 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E7FB0BC24E8FC4100BB8D59 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7E7FB0C324E8FC4100BB8D59;
+			remoteInfo = TitechAppLite;
+		};
+		7E7FB0E624E8FC4300BB8D59 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E7FB0BC24E8FC4100BB8D59 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7E7FB0C324E8FC4100BB8D59;
+			remoteInfo = TitechAppLite;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7E7FB0C424E8FC4100BB8D59 /* TitechAppLite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TitechAppLite.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E7FB0C724E8FC4100BB8D59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7E7FB0C924E8FC4100BB8D59 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7E7FB0CB24E8FC4100BB8D59 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7E7FB0CD24E8FC4300BB8D59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7E7FB0D024E8FC4300BB8D59 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7E7FB0D324E8FC4300BB8D59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7E7FB0D524E8FC4300BB8D59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E7FB0DA24E8FC4300BB8D59 /* TitechAppLiteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TitechAppLiteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E7FB0DE24E8FC4300BB8D59 /* TitechAppLiteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitechAppLiteTests.swift; sourceTree = "<group>"; };
+		7E7FB0E024E8FC4300BB8D59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E7FB0E524E8FC4300BB8D59 /* TitechAppLiteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TitechAppLiteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E7FB0E924E8FC4300BB8D59 /* TitechAppLiteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitechAppLiteUITests.swift; sourceTree = "<group>"; };
+		7E7FB0EB24E8FC4300BB8D59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7E7FB0C124E8FC4100BB8D59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E7FB0D724E8FC4300BB8D59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E7FB0E224E8FC4300BB8D59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7E7FB0BB24E8FC4100BB8D59 = {
+			isa = PBXGroup;
+			children = (
+				7E7FB0C624E8FC4100BB8D59 /* TitechAppLite */,
+				7E7FB0DD24E8FC4300BB8D59 /* TitechAppLiteTests */,
+				7E7FB0E824E8FC4300BB8D59 /* TitechAppLiteUITests */,
+				7E7FB0C524E8FC4100BB8D59 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7E7FB0C524E8FC4100BB8D59 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7E7FB0C424E8FC4100BB8D59 /* TitechAppLite.app */,
+				7E7FB0DA24E8FC4300BB8D59 /* TitechAppLiteTests.xctest */,
+				7E7FB0E524E8FC4300BB8D59 /* TitechAppLiteUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7E7FB0C624E8FC4100BB8D59 /* TitechAppLite */ = {
+			isa = PBXGroup;
+			children = (
+				7E7FB0C724E8FC4100BB8D59 /* AppDelegate.swift */,
+				7E7FB0C924E8FC4100BB8D59 /* SceneDelegate.swift */,
+				7E7FB0CB24E8FC4100BB8D59 /* ContentView.swift */,
+				7E7FB0CD24E8FC4300BB8D59 /* Assets.xcassets */,
+				7E7FB0D224E8FC4300BB8D59 /* LaunchScreen.storyboard */,
+				7E7FB0D524E8FC4300BB8D59 /* Info.plist */,
+				7E7FB0CF24E8FC4300BB8D59 /* Preview Content */,
+			);
+			path = TitechAppLite;
+			sourceTree = "<group>";
+		};
+		7E7FB0CF24E8FC4300BB8D59 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7E7FB0D024E8FC4300BB8D59 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7E7FB0DD24E8FC4300BB8D59 /* TitechAppLiteTests */ = {
+			isa = PBXGroup;
+			children = (
+				7E7FB0DE24E8FC4300BB8D59 /* TitechAppLiteTests.swift */,
+				7E7FB0E024E8FC4300BB8D59 /* Info.plist */,
+			);
+			path = TitechAppLiteTests;
+			sourceTree = "<group>";
+		};
+		7E7FB0E824E8FC4300BB8D59 /* TitechAppLiteUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7E7FB0E924E8FC4300BB8D59 /* TitechAppLiteUITests.swift */,
+				7E7FB0EB24E8FC4300BB8D59 /* Info.plist */,
+			);
+			path = TitechAppLiteUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7E7FB0C324E8FC4100BB8D59 /* TitechAppLite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E7FB0EE24E8FC4300BB8D59 /* Build configuration list for PBXNativeTarget "TitechAppLite" */;
+			buildPhases = (
+				7E7FB0C024E8FC4100BB8D59 /* Sources */,
+				7E7FB0C124E8FC4100BB8D59 /* Frameworks */,
+				7E7FB0C224E8FC4100BB8D59 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TitechAppLite;
+			productName = TitechAppLite;
+			productReference = 7E7FB0C424E8FC4100BB8D59 /* TitechAppLite.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7E7FB0D924E8FC4300BB8D59 /* TitechAppLiteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E7FB0F124E8FC4300BB8D59 /* Build configuration list for PBXNativeTarget "TitechAppLiteTests" */;
+			buildPhases = (
+				7E7FB0D624E8FC4300BB8D59 /* Sources */,
+				7E7FB0D724E8FC4300BB8D59 /* Frameworks */,
+				7E7FB0D824E8FC4300BB8D59 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7E7FB0DC24E8FC4300BB8D59 /* PBXTargetDependency */,
+			);
+			name = TitechAppLiteTests;
+			productName = TitechAppLiteTests;
+			productReference = 7E7FB0DA24E8FC4300BB8D59 /* TitechAppLiteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7E7FB0E424E8FC4300BB8D59 /* TitechAppLiteUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E7FB0F424E8FC4300BB8D59 /* Build configuration list for PBXNativeTarget "TitechAppLiteUITests" */;
+			buildPhases = (
+				7E7FB0E124E8FC4300BB8D59 /* Sources */,
+				7E7FB0E224E8FC4300BB8D59 /* Frameworks */,
+				7E7FB0E324E8FC4300BB8D59 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7E7FB0E724E8FC4300BB8D59 /* PBXTargetDependency */,
+			);
+			name = TitechAppLiteUITests;
+			productName = TitechAppLiteUITests;
+			productReference = 7E7FB0E524E8FC4300BB8D59 /* TitechAppLiteUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7E7FB0BC24E8FC4100BB8D59 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = tomoya;
+				TargetAttributes = {
+					7E7FB0C324E8FC4100BB8D59 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					7E7FB0D924E8FC4300BB8D59 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 7E7FB0C324E8FC4100BB8D59;
+					};
+					7E7FB0E424E8FC4300BB8D59 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 7E7FB0C324E8FC4100BB8D59;
+					};
+				};
+			};
+			buildConfigurationList = 7E7FB0BF24E8FC4100BB8D59 /* Build configuration list for PBXProject "TitechAppLite" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7E7FB0BB24E8FC4100BB8D59;
+			productRefGroup = 7E7FB0C524E8FC4100BB8D59 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7E7FB0C324E8FC4100BB8D59 /* TitechAppLite */,
+				7E7FB0D924E8FC4300BB8D59 /* TitechAppLiteTests */,
+				7E7FB0E424E8FC4300BB8D59 /* TitechAppLiteUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7E7FB0C224E8FC4100BB8D59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E7FB0D424E8FC4300BB8D59 /* LaunchScreen.storyboard in Resources */,
+				7E7FB0D124E8FC4300BB8D59 /* Preview Assets.xcassets in Resources */,
+				7E7FB0CE24E8FC4300BB8D59 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E7FB0D824E8FC4300BB8D59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E7FB0E324E8FC4300BB8D59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7E7FB0C024E8FC4100BB8D59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E7FB0C824E8FC4100BB8D59 /* AppDelegate.swift in Sources */,
+				7E7FB0CA24E8FC4100BB8D59 /* SceneDelegate.swift in Sources */,
+				7E7FB0CC24E8FC4100BB8D59 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E7FB0D624E8FC4300BB8D59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E7FB0DF24E8FC4300BB8D59 /* TitechAppLiteTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E7FB0E124E8FC4300BB8D59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E7FB0EA24E8FC4300BB8D59 /* TitechAppLiteUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7E7FB0DC24E8FC4300BB8D59 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7E7FB0C324E8FC4100BB8D59 /* TitechAppLite */;
+			targetProxy = 7E7FB0DB24E8FC4300BB8D59 /* PBXContainerItemProxy */;
+		};
+		7E7FB0E724E8FC4300BB8D59 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7E7FB0C324E8FC4100BB8D59 /* TitechAppLite */;
+			targetProxy = 7E7FB0E624E8FC4300BB8D59 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7E7FB0D224E8FC4300BB8D59 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7E7FB0D324E8FC4300BB8D59 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7E7FB0EC24E8FC4300BB8D59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7E7FB0ED24E8FC4300BB8D59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7E7FB0EF24E8FC4300BB8D59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"TitechAppLite/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = TitechAppLite/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tomoya.TitechAppLite;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7E7FB0F024E8FC4300BB8D59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"TitechAppLite/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = TitechAppLite/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tomoya.TitechAppLite;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7E7FB0F224E8FC4300BB8D59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TitechAppLiteTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tomoya.TitechAppLiteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TitechAppLite.app/TitechAppLite";
+			};
+			name = Debug;
+		};
+		7E7FB0F324E8FC4300BB8D59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TitechAppLiteTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tomoya.TitechAppLiteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TitechAppLite.app/TitechAppLite";
+			};
+			name = Release;
+		};
+		7E7FB0F524E8FC4300BB8D59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TitechAppLiteUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tomoya.TitechAppLiteUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TitechAppLite;
+			};
+			name = Debug;
+		};
+		7E7FB0F624E8FC4300BB8D59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TitechAppLiteUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tomoya.TitechAppLiteUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TitechAppLite;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7E7FB0BF24E8FC4100BB8D59 /* Build configuration list for PBXProject "TitechAppLite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E7FB0EC24E8FC4300BB8D59 /* Debug */,
+				7E7FB0ED24E8FC4300BB8D59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E7FB0EE24E8FC4300BB8D59 /* Build configuration list for PBXNativeTarget "TitechAppLite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E7FB0EF24E8FC4300BB8D59 /* Debug */,
+				7E7FB0F024E8FC4300BB8D59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E7FB0F124E8FC4300BB8D59 /* Build configuration list for PBXNativeTarget "TitechAppLiteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E7FB0F224E8FC4300BB8D59 /* Debug */,
+				7E7FB0F324E8FC4300BB8D59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E7FB0F424E8FC4300BB8D59 /* Build configuration list for PBXNativeTarget "TitechAppLiteUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E7FB0F524E8FC4300BB8D59 /* Debug */,
+				7E7FB0F624E8FC4300BB8D59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7E7FB0BC24E8FC4100BB8D59 /* Project object */;
+}
