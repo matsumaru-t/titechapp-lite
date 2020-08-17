@@ -16,32 +16,31 @@ struct EventRowView: View {
                 .foregroundColor(Color("main"))
             
             HStack{
-                VStack(alignment: .leading){
+                VStack(alignment: .leading, spacing: 21){
                     Text("09:00")
                         .font(Font.system(size: 13))
                         .foregroundColor(Color("textMain"))
-                    Spacer()
-                        .frame(height: 21)
                     Text("10:30")
                         .font(Font.system(size: 13))
                         .foregroundColor(Color("textSub"))
 
                 }
-                VStack(alignment: .leading){
+                VStack(alignment: .leading, spacing: 21){
                     Text("電磁気学")
                         .font(Font.system(size: 15))
                         .foregroundColor(Color("textMain"))
-                    Spacer()
-                        .frame(height: 21)
+                        .lineLimit(1)
                     Text("Week 1 Description")
                         .font(Font.system(size: 13))
                         .foregroundColor(Color("textSub"))
+                        .lineLimit(1)
                 }
                 Spacer()
                 Text("W833,G114")
                     .font(Font.system(size: 14))
                     .foregroundColor(Color("main"))
                     .frame(width: 40)
+                    .lineLimit(2)
             }.padding()
         }
     }
