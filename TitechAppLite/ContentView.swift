@@ -14,7 +14,7 @@ struct ContentView: View {
             List {
                 ForEach(0..<10){ _ in
                     EventRowView()
-                        .padding(.horizontal, -20)
+                    .listRowInsets(EdgeInsets())
                 }
             }.navigationBarTitle(Text("スケジュール"), displayMode: .inline)
         }

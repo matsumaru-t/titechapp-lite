@@ -38,9 +38,10 @@ struct EventRowView: View {
                         .foregroundColor(Color("textSub"))
                 }
                 Spacer()
-                Text("W222")
+                Text("W833,G114")
                     .font(Font.system(size: 14))
                     .foregroundColor(Color("main"))
+                    .frame(width: 40)
             }.padding()
         }
     }
