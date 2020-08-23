@@ -13,8 +13,12 @@ struct ContentView: View {
         NavigationView {
             List {
                 ForEach(0..<10){ _ in
-                    EventRowView()
-                    .listRowInsets(EdgeInsets())
+                    Section(header: EventHeaderView().listRowInsets(EdgeInsets())){
+                        EventRowView()
+                        .listRowInsets(EdgeInsets())
+                        EventRowView()
+                        .listRowInsets(EdgeInsets())
+                    }
                 }
             }.navigationBarTitle(Text("スケジュール"), displayMode: .inline)
         }
