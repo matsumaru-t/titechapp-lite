@@ -10,13 +10,10 @@ import SwiftUI
 
 struct EventHeaderView: View {
     var body: some View {
-        HStack{
+        HStack(spacing: 10) {
             Rectangle()
                 .frame(width: 5.0, height: 55.0)
                 .foregroundColor(Color("grayMain"))
-            
-            Spacer()
-                .frame(width: 10.0)
             
             Text("7月18日 木曜日")
                 .font(Font.system(size: 15))
