@@ -10,13 +10,17 @@
 		7E183BC324F25D9C007F8BB0 /* EventHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E183BC224F25D9C007F8BB0 /* EventHeaderView.swift */; };
 		7E7FB0C824E8FC4100BB8D59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7FB0C724E8FC4100BB8D59 /* AppDelegate.swift */; };
 		7E7FB0CA24E8FC4100BB8D59 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7FB0C924E8FC4100BB8D59 /* SceneDelegate.swift */; };
-		7E7FB0CC24E8FC4100BB8D59 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7FB0CB24E8FC4100BB8D59 /* ContentView.swift */; };
+		7E7FB0CC24E8FC4100BB8D59 /* EventListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7FB0CB24E8FC4100BB8D59 /* EventListView.swift */; };
 		7E7FB0CE24E8FC4300BB8D59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E7FB0CD24E8FC4300BB8D59 /* Assets.xcassets */; };
 		7E7FB0D124E8FC4300BB8D59 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E7FB0D024E8FC4300BB8D59 /* Preview Assets.xcassets */; };
 		7E7FB0D424E8FC4300BB8D59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E7FB0D224E8FC4300BB8D59 /* LaunchScreen.storyboard */; };
 		7E7FB0DF24E8FC4300BB8D59 /* TitechAppLiteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7FB0DE24E8FC4300BB8D59 /* TitechAppLiteTests.swift */; };
 		7E7FB0EA24E8FC4300BB8D59 /* TitechAppLiteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7FB0E924E8FC4300BB8D59 /* TitechAppLiteUITests.swift */; };
 		7E7FB0F824E8FFB800BB8D59 /* EventRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7FB0F724E8FFB800BB8D59 /* EventRowView.swift */; };
+		7ED6F9A124FB805200AD187E /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED6F9A024FB805200AD187E /* Event.swift */; };
+		7ED6F9A324FB821E00AD187E /* EventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED6F9A224FB821E00AD187E /* EventViewModel.swift */; };
+		7ED6F9AB24FB921B00AD187E /* EventHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED6F9AA24FB921B00AD187E /* EventHeader.swift */; };
+		7ED6F9AD24FB935200AD187E /* EventSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED6F9AC24FB935200AD187E /* EventSection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +45,7 @@
 		7E7FB0C424E8FC4100BB8D59 /* TitechAppLite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TitechAppLite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E7FB0C724E8FC4100BB8D59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E7FB0C924E8FC4100BB8D59 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7E7FB0CB24E8FC4100BB8D59 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7E7FB0CB24E8FC4100BB8D59 /* EventListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListView.swift; sourceTree = "<group>"; };
 		7E7FB0CD24E8FC4300BB8D59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E7FB0D024E8FC4300BB8D59 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7E7FB0D324E8FC4300BB8D59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -53,6 +57,10 @@
 		7E7FB0E924E8FC4300BB8D59 /* TitechAppLiteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitechAppLiteUITests.swift; sourceTree = "<group>"; };
 		7E7FB0EB24E8FC4300BB8D59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E7FB0F724E8FFB800BB8D59 /* EventRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventRowView.swift; sourceTree = "<group>"; };
+		7ED6F9A024FB805200AD187E /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		7ED6F9A224FB821E00AD187E /* EventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewModel.swift; sourceTree = "<group>"; };
+		7ED6F9AA24FB921B00AD187E /* EventHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventHeader.swift; sourceTree = "<group>"; };
+		7ED6F9AC24FB935200AD187E /* EventSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventSection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,9 +113,9 @@
 			children = (
 				7E7FB0C724E8FC4100BB8D59 /* AppDelegate.swift */,
 				7E7FB0C924E8FC4100BB8D59 /* SceneDelegate.swift */,
-				7E7FB0CB24E8FC4100BB8D59 /* ContentView.swift */,
-				7E183BC224F25D9C007F8BB0 /* EventHeaderView.swift */,
-				7E7FB0F724E8FFB800BB8D59 /* EventRowView.swift */,
+				7ED6F99F24FB801300AD187E /* Model */,
+				7ED6F99E24FB800400AD187E /* ViewModel */,
+				7ED6F99D24FB7FB200AD187E /* View */,
 				7E7FB0CD24E8FC4300BB8D59 /* Assets.xcassets */,
 				7E7FB0D224E8FC4300BB8D59 /* LaunchScreen.storyboard */,
 				7E7FB0D524E8FC4300BB8D59 /* Info.plist */,
@@ -140,6 +148,34 @@
 				7E7FB0EB24E8FC4300BB8D59 /* Info.plist */,
 			);
 			path = TitechAppLiteUITests;
+			sourceTree = "<group>";
+		};
+		7ED6F99D24FB7FB200AD187E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7E7FB0F724E8FFB800BB8D59 /* EventRowView.swift */,
+				7E183BC224F25D9C007F8BB0 /* EventHeaderView.swift */,
+				7E7FB0CB24E8FC4100BB8D59 /* EventListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7ED6F99E24FB800400AD187E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7ED6F9A224FB821E00AD187E /* EventViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7ED6F99F24FB801300AD187E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7ED6F9A024FB805200AD187E /* Event.swift */,
+				7ED6F9AA24FB921B00AD187E /* EventHeader.swift */,
+				7ED6F9AC24FB935200AD187E /* EventSection.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,7 +313,11 @@
 				7E7FB0C824E8FC4100BB8D59 /* AppDelegate.swift in Sources */,
 				7E7FB0CA24E8FC4100BB8D59 /* SceneDelegate.swift in Sources */,
 				7E7FB0F824E8FFB800BB8D59 /* EventRowView.swift in Sources */,
-				7E7FB0CC24E8FC4100BB8D59 /* ContentView.swift in Sources */,
+				7ED6F9AD24FB935200AD187E /* EventSection.swift in Sources */,
+				7ED6F9A124FB805200AD187E /* Event.swift in Sources */,
+				7ED6F9A324FB821E00AD187E /* EventViewModel.swift in Sources */,
+				7E7FB0CC24E8FC4100BB8D59 /* EventListView.swift in Sources */,
+				7ED6F9AB24FB921B00AD187E /* EventHeader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
