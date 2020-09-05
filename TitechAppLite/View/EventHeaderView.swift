@@ -16,7 +16,7 @@ struct EventHeaderView: View {
                 .frame(width: 5.0, height: 55.0)
                 .foregroundColor(Color("grayMain"))
             
-            Text(header.headerToString())
+            Text(header.headerString)
                 .font(Font.system(size: 15))
                 .foregroundColor(Color("textSub"))
             

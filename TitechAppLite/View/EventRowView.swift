@@ -56,7 +56,6 @@ struct EventRowView_Previews: PreviewProvider {
             name: "電磁気学",
             description: "description",
             room: "W833,G114"
-        ))
-            .previewLayout(.fixed(width: 375, height: 100))
+        )).previewLayout(.fixed(width: 375, height: 100))
     }
 }

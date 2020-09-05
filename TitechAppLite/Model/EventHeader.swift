@@ -16,6 +16,25 @@ enum DayOfWeek: Int {
     case thursday = 4
     case friday = 5
     case saturday = 6
+    
+    var jaString: String {
+        switch self {
+        case .sunday:
+            return "日"
+        case .monday:
+            return "月"
+        case .tuesday:
+            return "火"
+        case .wednesday:
+            return "水"
+        case .thursday:
+            return "木"
+        case .friday:
+            return "金"
+        case .saturday:
+            return "土"
+        }
+    }
 }
 
 struct EventHeader: Identifiable {
@@ -24,8 +43,7 @@ struct EventHeader: Identifiable {
     let day: Int
     let dayOfWeek: DayOfWeek
     
-    func headerToString() -> String {
-        let weeks = ["日", "月", "火", "水", "木", "金", "土"]
-        return String(month) + "月" + String(day) + "日 " + weeks[dayOfWeek.rawValue] + "曜日"
+    var headerString: String {
+        "\(month)月\(day)日 \(dayOfWeek.jaString)曜日"
     }
 }
