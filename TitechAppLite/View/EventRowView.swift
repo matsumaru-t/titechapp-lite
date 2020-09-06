@@ -9,6 +9,8 @@
 import SwiftUI
 
 struct EventRowView: View {
+    let event: Event
+    
     var body: some View {
         HStack{
             Rectangle()
@@ -17,26 +19,26 @@ struct EventRowView: View {
             
             HStack{
                 VStack(alignment: .leading, spacing: 21){
-                    Text("09:00")
+                    Text(event.time.start)
                         .font(Font.system(size: 13))
                         .foregroundColor(Color("textMain"))
-                    Text("10:30")
+                    Text(event.time.end)
                         .font(Font.system(size: 13))
                         .foregroundColor(Color("textSub"))
 
                 }
                 VStack(alignment: .leading, spacing: 21){
-                    Text("電磁気学")
+                    Text(event.name)
                         .font(Font.system(size: 15))
                         .foregroundColor(Color("textMain"))
                         .lineLimit(1)
-                    Text("Week 1 Description")
+                    Text(event.description)
                         .font(Font.system(size: 13))
                         .foregroundColor(Color("textSub"))
                         .lineLimit(1)
                 }
                 Spacer()
-                Text("W833,G114")
+                Text(event.room)
                     .font(Font.system(size: 14))
                     .foregroundColor(Color("main"))
                     .frame(width: 40)
@@ -48,6 +50,12 @@ struct EventRowView: View {
 
 struct EventRowView_Previews: PreviewProvider {
     static var previews: some View {
-        EventRowView().previewLayout(.fixed(width: 375, height: 100))
+        EventRowView(event: Event(
+            id: 1,
+            time: Event.Time(start: "9:00", end: "10:30"),
+            name: "電磁気学",
+            description: "description",
+            room: "W833,G114"
+        )).previewLayout(.fixed(width: 375, height: 100))
     }
 }
