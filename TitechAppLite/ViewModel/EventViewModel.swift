@@ -30,4 +30,21 @@ class EventViewModel: ObservableObject {
             events: [testData, testData]
         )
     ]
+    
+    private var cancellable: AnyCancellable!
+    
+    func appear() {
+        cancellable = APIClient()
+            .fetch(url: URL(string: "https://ocwi-mock.titech.app/ocwi/index.php?module=Ocwi&action=Webcal&iCalendarId=test")!)
+                .receive(on: DispatchQueue.main)
+            .sink(
+                receiveCompletion: { result in
+
+                },
+                receiveValue: { value in
+                    let events = ICalParser.parse(from: String(data: value, encoding: .utf8)!)!
+                    self.eventlist.append(EventSection(id: 3, header: EventHeader(id: 3, month: 2, day: 28, dayOfWeek: DayOfWeek.sunday), events: events))
+                }
+            )
+    }
 }

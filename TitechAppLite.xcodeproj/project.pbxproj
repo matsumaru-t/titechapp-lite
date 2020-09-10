@@ -17,6 +17,9 @@
 		7E7FB0DF24E8FC4300BB8D59 /* TitechAppLiteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7FB0DE24E8FC4300BB8D59 /* TitechAppLiteTests.swift */; };
 		7E7FB0EA24E8FC4300BB8D59 /* TitechAppLiteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7FB0E924E8FC4300BB8D59 /* TitechAppLiteUITests.swift */; };
 		7E7FB0F824E8FFB800BB8D59 /* EventRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7FB0F724E8FFB800BB8D59 /* EventRowView.swift */; };
+		7E9A365C2504C04900F03E20 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9A365B2504C04900F03E20 /* APIClient.swift */; };
+		7E9A365E2504D0A300F03E20 /* ICalParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9A365D2504D0A300F03E20 /* ICalParser.swift */; };
+		7E9A36612504D92C00F03E20 /* Regexp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9A36602504D92C00F03E20 /* Regexp.swift */; };
 		7ED6F9A124FB805200AD187E /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED6F9A024FB805200AD187E /* Event.swift */; };
 		7ED6F9A324FB821E00AD187E /* EventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED6F9A224FB821E00AD187E /* EventViewModel.swift */; };
 		7ED6F9AB24FB921B00AD187E /* EventHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED6F9AA24FB921B00AD187E /* EventHeader.swift */; };
@@ -57,6 +60,9 @@
 		7E7FB0E924E8FC4300BB8D59 /* TitechAppLiteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitechAppLiteUITests.swift; sourceTree = "<group>"; };
 		7E7FB0EB24E8FC4300BB8D59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E7FB0F724E8FFB800BB8D59 /* EventRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventRowView.swift; sourceTree = "<group>"; };
+		7E9A365B2504C04900F03E20 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		7E9A365D2504D0A300F03E20 /* ICalParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICalParser.swift; sourceTree = "<group>"; };
+		7E9A36602504D92C00F03E20 /* Regexp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Regexp.swift; sourceTree = "<group>"; };
 		7ED6F9A024FB805200AD187E /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		7ED6F9A224FB821E00AD187E /* EventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewModel.swift; sourceTree = "<group>"; };
 		7ED6F9AA24FB921B00AD187E /* EventHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventHeader.swift; sourceTree = "<group>"; };
@@ -111,6 +117,8 @@
 		7E7FB0C624E8FC4100BB8D59 /* TitechAppLite */ = {
 			isa = PBXGroup;
 			children = (
+				7E9A365F2504D8EF00F03E20 /* Parser */,
+				7E9A365A2504C03500F03E20 /* APIClient */,
 				7E7FB0C724E8FC4100BB8D59 /* AppDelegate.swift */,
 				7E7FB0C924E8FC4100BB8D59 /* SceneDelegate.swift */,
 				7ED6F99F24FB801300AD187E /* Model */,
@@ -148,6 +156,23 @@
 				7E7FB0EB24E8FC4300BB8D59 /* Info.plist */,
 			);
 			path = TitechAppLiteUITests;
+			sourceTree = "<group>";
+		};
+		7E9A365A2504C03500F03E20 /* APIClient */ = {
+			isa = PBXGroup;
+			children = (
+				7E9A365B2504C04900F03E20 /* APIClient.swift */,
+			);
+			path = APIClient;
+			sourceTree = "<group>";
+		};
+		7E9A365F2504D8EF00F03E20 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				7E9A365D2504D0A300F03E20 /* ICalParser.swift */,
+				7E9A36602504D92C00F03E20 /* Regexp.swift */,
+			);
+			path = Parser;
 			sourceTree = "<group>";
 		};
 		7ED6F99D24FB7FB200AD187E /* View */ = {
@@ -311,10 +336,13 @@
 			files = (
 				7E183BC324F25D9C007F8BB0 /* EventHeaderView.swift in Sources */,
 				7E7FB0C824E8FC4100BB8D59 /* AppDelegate.swift in Sources */,
+				7E9A36612504D92C00F03E20 /* Regexp.swift in Sources */,
 				7E7FB0CA24E8FC4100BB8D59 /* SceneDelegate.swift in Sources */,
+				7E9A365C2504C04900F03E20 /* APIClient.swift in Sources */,
 				7E7FB0F824E8FFB800BB8D59 /* EventRowView.swift in Sources */,
 				7ED6F9AD24FB935200AD187E /* EventSection.swift in Sources */,
 				7ED6F9A124FB805200AD187E /* Event.swift in Sources */,
+				7E9A365E2504D0A300F03E20 /* ICalParser.swift in Sources */,
 				7ED6F9A324FB821E00AD187E /* EventViewModel.swift in Sources */,
 				7E7FB0CC24E8FC4100BB8D59 /* EventListView.swift in Sources */,
 				7ED6F9AB24FB921B00AD187E /* EventHeader.swift in Sources */,
