@@ -23,7 +23,6 @@
 		7ED6F9A124FB805200AD187E /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED6F9A024FB805200AD187E /* Event.swift */; };
 		7ED6F9A324FB821E00AD187E /* EventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED6F9A224FB821E00AD187E /* EventViewModel.swift */; };
 		7ED6F9AB24FB921B00AD187E /* EventHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED6F9AA24FB921B00AD187E /* EventHeader.swift */; };
-		7ED6F9AD24FB935200AD187E /* EventSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED6F9AC24FB935200AD187E /* EventSection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,7 +65,6 @@
 		7ED6F9A024FB805200AD187E /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		7ED6F9A224FB821E00AD187E /* EventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewModel.swift; sourceTree = "<group>"; };
 		7ED6F9AA24FB921B00AD187E /* EventHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventHeader.swift; sourceTree = "<group>"; };
-		7ED6F9AC24FB935200AD187E /* EventSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventSection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,7 +196,6 @@
 			children = (
 				7ED6F9A024FB805200AD187E /* Event.swift */,
 				7ED6F9AA24FB921B00AD187E /* EventHeader.swift */,
-				7ED6F9AC24FB935200AD187E /* EventSection.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -340,7 +337,6 @@
 				7E7FB0CA24E8FC4100BB8D59 /* SceneDelegate.swift in Sources */,
 				7E9A365C2504C04900F03E20 /* APIClient.swift in Sources */,
 				7E7FB0F824E8FFB800BB8D59 /* EventRowView.swift in Sources */,
-				7ED6F9AD24FB935200AD187E /* EventSection.swift in Sources */,
 				7ED6F9A124FB805200AD187E /* Event.swift in Sources */,
 				7E9A365E2504D0A300F03E20 /* ICalParser.swift in Sources */,
 				7ED6F9A324FB821E00AD187E /* EventViewModel.swift in Sources */,
