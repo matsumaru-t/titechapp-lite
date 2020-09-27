@@ -8,15 +8,33 @@
 
 import Foundation
 
-struct Event: Decodable, Identifiable {
-    struct Time: Decodable {
-        let start: String
-        let end: String
+struct Event: Identifiable {
+    struct Time {
+        let start: Date
+        let end: Date
+        
+        var startStr: String {
+            start.toString()
+        }
+        var endStr: String {
+            end.toString()
+        }
     }
     
-    let id: Int
+    let id: String
     let time: Time
     let name: String
     let description: String
     let room: String
+}
+
+private extension Date {
+    func toString() -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.locale = Locale(identifier: "ja")
+        dateFormatter.timeZone = TimeZone(identifier: "Asia/Tokyo")
+        dateFormatter.dateFormat = "HH:mm"
+        
+        return dateFormatter.string(from: self)
+    }
 }

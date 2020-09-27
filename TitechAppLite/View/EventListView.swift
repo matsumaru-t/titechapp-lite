@@ -14,7 +14,7 @@ struct EventListView: View {
         NavigationView {
             List {
                 ForEach(viewModel.eventlist) { eventlist in
-                    Section(header: EventHeaderView(header: eventlist.header)){
+                    Section(header: EventHeaderView(headerStr: eventlist.dateStr)) {
                         ForEach(eventlist.events) { event in
                             EventRowView(event: event)
                         }
@@ -23,6 +23,9 @@ struct EventListView: View {
                 .listRowInsets(EdgeInsets())
                 .navigationBarTitle(Text("スケジュール"), displayMode: .inline)
             }
+        }
+        .onAppear {
+            self.viewModel.appear()
         }
     }
 }

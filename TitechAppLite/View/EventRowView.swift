@@ -19,10 +19,10 @@ struct EventRowView: View {
             
             HStack{
                 VStack(alignment: .leading, spacing: 21){
-                    Text(event.time.start)
+                    Text(event.time.startStr)
                         .font(Font.system(size: 13))
                         .foregroundColor(Color("textMain"))
-                    Text(event.time.end)
+                    Text(event.time.endStr)
                         .font(Font.system(size: 13))
                         .foregroundColor(Color("textSub"))
 
@@ -51,8 +51,8 @@ struct EventRowView: View {
 struct EventRowView_Previews: PreviewProvider {
     static var previews: some View {
         EventRowView(event: Event(
-            id: 1,
-            time: Event.Time(start: "9:00", end: "10:30"),
+            id: "1",
+            time: Event.Time(start: Date(), end: Date()),
             name: "電磁気学",
             description: "description",
             room: "W833,G114"
