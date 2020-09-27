@@ -16,7 +16,7 @@ struct EventHeaderView: View {
                 .frame(width: 5.0, height: 55.0)
                 .foregroundColor(Color("grayMain"))
             
-            Text(header.headerString)
+            Text(header.headerStr)
                 .font(Font.system(size: 15))
                 .foregroundColor(Color("textSub"))
             
@@ -28,6 +28,6 @@ struct EventHeaderView: View {
 
 struct EventHeaderView_Previews: PreviewProvider {
     static var previews: some View {
-        EventHeaderView(header: EventHeader(id: 1, month: 2, day: 28, dayOfWeek: DayOfWeek.sunday)).previewLayout(.fixed(width: 375, height: 55))
+        EventHeaderView(header: EventHeader(id: Date())).previewLayout(.fixed(width: 375, height: 55))
     }
 }

@@ -9,7 +9,7 @@
 import Foundation
 
 struct ICalParser {
-    static func parse(from: String) -> [Event]? {
+    static func parse(from: String) -> [Date: [Event]]? {
         let dateFormatter = DateFormatter()
         dateFormatter.locale = Locale(identifier: "ja")
         dateFormatter.timeZone = TimeZone(identifier: "Asia/Tokyo")
@@ -31,22 +31,31 @@ struct ICalParser {
                 let room = str.match("LOCATION:(.*)\n"),
                 let description = str.match("DESCRIPTION:(.*)\n"),
                 let name = str.match("SUMMARY:(.*)\n"),
-                let id = Int(str.match("UID:(.*?)_.*\n")!) else {
+                let id = str.match("UID:(.*?)@.*\n") else {
                     return nil
             }
             
             dateFormatter.dateFormat = "HH:mm"
-            
-            return Event(
+            let event = Event(
                 id: id,
-                time: Event.Time(start: dateFormatter.string(from: startTime), end: dateFormatter.string(from: endTime)),
+                time: Event.Time(
+                    start: startTime,
+                    end: endTime,
+                    startStr: dateFormatter.string(from: startTime),
+                    endStr: dateFormatter.string(from: endTime)
+                ),
                 name: name,
                 description: description,
                 room: room
             )
             
+            return event
         }
-        print(events)
-        return events
+        
+        dateFormatter.dateFormat = DateFormatter.dateFormat(fromTemplate: "dMMMEEEE", options: 0, locale: Locale(identifier: "ja_JP"))
+        return Dictionary(grouping: events) {
+            let dateStr = dateFormatter.string(from: $0.time.start)
+            return dateFormatter.date(from: dateStr)!
+        }
     }
 }
