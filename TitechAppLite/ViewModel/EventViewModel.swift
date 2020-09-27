@@ -17,7 +17,7 @@ class EventViewModel: ObservableObject {
     func appear() {
         cancellable = APIClient()
             .fetch(url: URL(string: "https://ocwi-mock.titech.app/ocwi/index.php?module=Ocwi&action=Webcal&iCalendarId=test")!)
-                .receive(on: DispatchQueue.main)
+            .receive(on: DispatchQueue.main)
             .sink(
                 receiveCompletion: { result in
 
