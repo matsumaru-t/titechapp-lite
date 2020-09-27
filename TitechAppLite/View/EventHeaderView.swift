@@ -9,14 +9,14 @@
 import SwiftUI
 
 struct EventHeaderView: View {
-    let header: EventHeader
+    let headerStr: String
     var body: some View {
         HStack(spacing: 10) {
             Rectangle()
                 .frame(width: 5.0, height: 55.0)
                 .foregroundColor(Color("grayMain"))
             
-            Text(header.headerStr)
+            Text(headerStr)
                 .font(Font.system(size: 15))
                 .foregroundColor(Color("textSub"))
             
@@ -28,6 +28,6 @@ struct EventHeaderView: View {
 
 struct EventHeaderView_Previews: PreviewProvider {
     static var previews: some View {
-        EventHeaderView(header: EventHeader(id: Date())).previewLayout(.fixed(width: 375, height: 55))
+        EventHeaderView(headerStr: "1月2日 水曜日").previewLayout(.fixed(width: 375, height: 55))
     }
 }

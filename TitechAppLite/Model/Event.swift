@@ -12,8 +12,13 @@ struct Event: Identifiable {
     struct Time {
         let start: Date
         let end: Date
-        let startStr: String
-        let endStr: String
+        
+        var startStr: String {
+            start.toString()
+        }
+        var endStr: String {
+            end.toString()
+        }
     }
     
     let id: String
@@ -21,4 +26,15 @@ struct Event: Identifiable {
     let name: String
     let description: String
     let room: String
+}
+
+private extension Date {
+    func toString() -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.locale = Locale(identifier: "ja")
+        dateFormatter.timeZone = TimeZone(identifier: "Asia/Tokyo")
+        dateFormatter.dateFormat = "HH:mm"
+        
+        return dateFormatter.string(from: self)
+    }
 }

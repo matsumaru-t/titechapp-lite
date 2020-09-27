@@ -13,9 +13,9 @@ struct EventListView: View {
     var body: some View {
         NavigationView {
             List {
-                ForEach(viewModel.eventlist.keys.sorted(), id: \.self) { key in
-                    Section(header: EventHeaderView(header: EventHeader(id: key))){
-                        ForEach(viewModel.eventlist[key]!) { event in
+                ForEach(viewModel.eventlist) { eventlist in
+                    Section(header: EventHeaderView(headerStr: eventlist.dateStr)) {
+                        ForEach(eventlist.events) { event in
                             EventRowView(event: event)
                         }
                     }

@@ -52,7 +52,7 @@ struct EventRowView_Previews: PreviewProvider {
     static var previews: some View {
         EventRowView(event: Event(
             id: "1",
-            time: Event.Time(start: Date(), end: Date(), startStr: "9:00", endStr: "10:30"),
+            time: Event.Time(start: Date(), end: Date()),
             name: "電磁気学",
             description: "description",
             room: "W833,G114"

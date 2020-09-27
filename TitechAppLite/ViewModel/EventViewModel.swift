@@ -10,7 +10,7 @@ import Foundation
 import Combine
 
 class EventViewModel: ObservableObject {
-    @Published var eventlist = [Date: [Event]]()
+    @Published var eventlist = [EventSection]()
     
     private var cancellable: AnyCancellable!
     
@@ -23,7 +23,8 @@ class EventViewModel: ObservableObject {
 
                 },
                 receiveValue: { value in
-                    self.eventlist = ICalParser.parse(from: String(data: value, encoding: .utf8)!)!
+                    let events = ICalParser.parse(from: String(data: value, encoding: .utf8) ?? "")
+                    self.eventlist = EventListTranslator.translate(events: events ?? [], now: Date())
                 }
             )
     }
