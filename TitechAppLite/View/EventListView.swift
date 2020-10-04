@@ -10,7 +10,7 @@ import SwiftUI
 
 struct EventListView: View {
     @ObservedObject var viewModel = EventViewModel()
-    @State private var isPresentedSettingView = false
+    @State var isPresentedSettingView = false
     
     var body: some View {
         NavigationView {
@@ -31,7 +31,7 @@ struct EventListView: View {
                 })
             })
         }
-        .sheet(isPresented: $isPresentedSettingView) { EmptyView() }
+        .sheet(isPresented: $isPresentedSettingView) { URLSettingView() }
         .onAppear {
             self.viewModel.appear()
         }
