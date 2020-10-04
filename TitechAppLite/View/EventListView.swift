@@ -23,8 +23,8 @@ struct EventListView: View {
                     }
                 }
                 .listRowInsets(EdgeInsets())
-                .navigationBarTitle(Text("スケジュール"), displayMode: .inline)
             }
+            .navigationBarTitle(Text("スケジュール"), displayMode: .inline)
             .toolbar(content: {
                 Button(action: { isPresentedSettingView = true }, label: {
                     Text("設定")
