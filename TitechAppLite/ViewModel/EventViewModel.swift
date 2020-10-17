@@ -11,12 +11,13 @@ import Combine
 
 class EventViewModel: ObservableObject {
     @Published var eventlist = [EventSection]()
-    
     private var cancellable: AnyCancellable!
     
     func appear() {
+        let urlStr = UserDefaults.standard.string(forKey: "ICalURL") ?? ""
+        let defaultUrl = URL(string: "https://ocwi-mock.titech.app/ocwi/index.php?module=Ocwi&action=Webcal&iCalendarId=test")!
         cancellable = APIClient()
-            .fetch(url: URL(string: "https://ocwi-mock.titech.app/ocwi/index.php?module=Ocwi&action=Webcal&iCalendarId=test")!)
+            .fetch(url: URL(string: urlStr) ?? defaultUrl)
             .receive(on: DispatchQueue.main)
             .sink(
                 receiveCompletion: { result in

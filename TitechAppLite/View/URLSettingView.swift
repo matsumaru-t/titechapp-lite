@@ -9,18 +9,31 @@
 import SwiftUI
 
 struct URLSettingView: View {
-    @State private var url = ""
+    @State private var url = UserDefaults.standard.string(forKey: "ICalURL") ?? ""
     @State private var showDialog = false
+    @State private var isDisable = true
+    @Environment(\.presentationMode) var presentationMode
     
     var body: some View {
         NavigationView {
             Form {
-                TextField("URL", text: $url)
-                Button(action: { showDialog = true }, label: {
+                TextField("URL", text: $url, onEditingChanged: { begin in
+                    let urlMatch = url.match("(https?://.*)")
+                    isDisable = urlMatch == nil
+                }).keyboardType(.URL).autocapitalization(.none)
+                Button(action: {
+                    showDialog = true
+                    UserDefaults.standard.set(url, forKey: "ICalURL")
+                }, label: {
                     Text("保存")
-                })
+                }).disabled(isDisable)
                 .alert(isPresented: $showDialog, content: {
-                    Alert(title: Text("保存完了"))
+                    Alert(
+                        title: Text("保存完了"),
+                        dismissButton: .default(Text("OK"), action: {
+                            presentationMode.wrappedValue.dismiss()
+                        })
+                    )
                 })
             }
             .background(Color("backgroundMain"))

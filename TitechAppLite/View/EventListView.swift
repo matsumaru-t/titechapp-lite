@@ -31,10 +31,13 @@ struct EventListView: View {
                 })
             })
         }
-        .sheet(isPresented: $isPresentedSettingView) { URLSettingView() }
+        .sheet(isPresented: $isPresentedSettingView, onDismiss: {
+            viewModel.appear()
+        }) { URLSettingView() }
         .onAppear {
-            self.viewModel.appear()
+            viewModel.appear()
         }
+
     }
 }
 
