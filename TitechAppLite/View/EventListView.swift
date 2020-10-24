@@ -10,6 +10,8 @@ import SwiftUI
 
 struct EventListView: View {
     @ObservedObject var viewModel = EventViewModel()
+    @State var isPresentedSettingView = false
+    
     var body: some View {
         NavigationView {
             List {
@@ -21,12 +23,21 @@ struct EventListView: View {
                     }
                 }
                 .listRowInsets(EdgeInsets())
-                .navigationBarTitle(Text("スケジュール"), displayMode: .inline)
             }
+            .navigationBarTitle(Text("スケジュール"), displayMode: .inline)
+            .toolbar(content: {
+                Button(action: { isPresentedSettingView = true }, label: {
+                    Text("設定")
+                })
+            })
         }
+        .sheet(isPresented: $isPresentedSettingView, onDismiss: {
+            viewModel.appear()
+        }) { URLSettingView() }
         .onAppear {
-            self.viewModel.appear()
+            viewModel.appear()
         }
+
     }
 }
 

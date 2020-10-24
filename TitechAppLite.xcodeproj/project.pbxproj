@@ -24,6 +24,7 @@
 		7E9A36612504D92C00F03E20 /* Regexp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9A36602504D92C00F03E20 /* Regexp.swift */; };
 		7ED6F9A124FB805200AD187E /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED6F9A024FB805200AD187E /* Event.swift */; };
 		7ED6F9A324FB821E00AD187E /* EventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED6F9A224FB821E00AD187E /* EventViewModel.swift */; };
+		7EFD83DD2529C5740045AAF7 /* URLSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFD83DC2529C5740045AAF7 /* URLSettingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		7E9A36602504D92C00F03E20 /* Regexp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Regexp.swift; sourceTree = "<group>"; };
 		7ED6F9A024FB805200AD187E /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		7ED6F9A224FB821E00AD187E /* EventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewModel.swift; sourceTree = "<group>"; };
+		7EFD83DC2529C5740045AAF7 /* URLSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSettingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +192,7 @@
 				7E7FB0F724E8FFB800BB8D59 /* EventRowView.swift */,
 				7E183BC224F25D9C007F8BB0 /* EventHeaderView.swift */,
 				7E7FB0CB24E8FC4100BB8D59 /* EventListView.swift */,
+				7EFD83DC2529C5740045AAF7 /* URLSettingView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -343,6 +346,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E183BC324F25D9C007F8BB0 /* EventHeaderView.swift in Sources */,
+				7EFD83DD2529C5740045AAF7 /* URLSettingView.swift in Sources */,
 				7E7FB0C824E8FC4100BB8D59 /* AppDelegate.swift in Sources */,
 				7E9A36612504D92C00F03E20 /* Regexp.swift in Sources */,
 				7E7FB0CA24E8FC4100BB8D59 /* SceneDelegate.swift in Sources */,
@@ -450,7 +454,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -504,7 +508,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
