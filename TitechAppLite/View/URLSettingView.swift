@@ -11,7 +11,7 @@ import SwiftUI
 struct URLSettingView: View {
     @State private var url = UserDefaults.standard.string(forKey: "ICalURL") ?? ""
     @State private var showDialog = false
-    @State private var isDisable = true
+    @State private var isButtonDisable = true
     @Environment(\.presentationMode) var presentationMode
     
     var body: some View {
@@ -19,14 +19,14 @@ struct URLSettingView: View {
             Form {
                 TextField("URL", text: $url, onEditingChanged: { begin in
                     let urlMatch = url.match("(https?://.*)")
-                    isDisable = urlMatch == nil
+                    isButtonDisable = urlMatch == nil
                 }).keyboardType(.URL).autocapitalization(.none)
                 Button(action: {
                     showDialog = true
                     UserDefaults.standard.set(url, forKey: "ICalURL")
                 }, label: {
                     Text("保存")
-                }).disabled(isDisable)
+                }).disabled(isButtonDisable)
                 .alert(isPresented: $showDialog, content: {
                     Alert(
                         title: Text("保存完了"),
@@ -36,7 +36,6 @@ struct URLSettingView: View {
                     )
                 })
             }
-            .background(Color("backgroundMain"))
             .navigationBarTitle(Text("カレンダーURL設定"), displayMode: .inline)
         }
     }
